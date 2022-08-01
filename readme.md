@@ -1,4 +1,4 @@
-# ~EM DESENVOLVIMENTO~
+# $EM$ $DESENVOLVIMENTO$
 
 # Gatherveloping
 
