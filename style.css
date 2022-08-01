@@ -173,3 +173,31 @@ main {
 .grid-section div:nth-child(1) {
     background-color: #F7DF1E;
 }
+
+#dropdownJS {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    color: var(--dark-color);
+    box-shadow: 10px 10px 15px #0000006a;
+    border-radius: .5rem;
+    height: .2vh;
+    padding: 1% 2% 2% 2%;
+    transform: translate(41vw, 8vh);
+}
+
+#dropdownJS dd {
+    margin-bottom: .2rem;
+    cursor: pointer;
+    padding: 0 2rem 0 2rem;
+    transition: 200ms ease-in-out;
+}
+
+#dropdownJS dd:hover {
+    background: var(--secondary-color);
+    padding: .2rem 2rem .2rem 2rem;
+    border-radius: 1rem;
+}

@@ -22,3 +22,16 @@ function closeMenu() {
         document.getElementById("header").style.width = "5%"
     }, 150)
 }
+
+function dropdown() {
+    let dropdown = document.getElementById("dropdownJS")
+    dropdown.style.display = "flex"
+    dropdown.style.height = "13vh"
+    dropdown.onmouseleave = function() {closeDropdown()}
+    
+}
+
+function closeDropdown() {
+    document.getElementById("dropdownJS").style.display = "none"
+    
+}
