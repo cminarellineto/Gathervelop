@@ -201,3 +201,74 @@ main {
     padding: .2rem 2rem .2rem 2rem;
     border-radius: 1rem;
 }
+
+#newArticle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1rem;
+    border: solid .2rem var(--dark-color);
+    border-radius: .5rem;
+    background: #fff;
+    left: 40%;
+    color: var(--dark-color);
+    transition: 100ms ease-in-out;
+}
+
+#newArticle:hover {
+    border: solid .2rem var(--secondary-color);
+    transition: 100ms ease-in-out;
+}
+
+#newArticle form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newArticle input[type="text"] {
+    margin-bottom: 1rem;
+}
+
+.form-buttons {
+    margin-top: .5rem;
+}
+
+
+.send-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    height: 20vh;
+    padding: .5rem;
+    margin-right: 1rem;
+    box-shadow: 5px 5px #0000006a;
+    border-radius: .5rem;
+}
+
+.send-input label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.send-input i {
+    font-size: 6em;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.send-input i:hover {
+    font-size: 6em;
+    filter: drop-shadow(10px 10px var(--main-color));
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
+#fileImg {display: none;}
+
+
