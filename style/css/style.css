@@ -115,7 +115,7 @@ main {
   margin-right: 2rem;
   padding: 0.8rem;
   cursor: pointer;
-  transition: 0.25s ease-in-out;
+  transition: 0.2s ease-in-out;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -125,10 +125,11 @@ main {
   background: #F7DF1E;
   border-radius: 0.2rem;
   color: #3b3a3a;
+  transition: 0.2s ease-in-out;
 }
 .flex-section ul li:hover i {
   margin-right: 0.5rem;
-  transition: 0.25s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .grid-section {

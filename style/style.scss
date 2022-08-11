@@ -112,15 +112,16 @@ main {
             margin-right: 2rem;
             padding: .8rem;
             cursor: pointer;
-            transition: .25s ease-in-out;
+            transition: $transition-md;
             user-select: none;
             &:hover {
                 background: $secondary-color;
                 border-radius: .2rem;
                 color: $dark-color;
+                transition: $transition-md;
                 i {
                     margin-right: .5rem;
-                    transition: .25s ease-in-out;
+                    transition: $transition-md;
                 }
             }
         }

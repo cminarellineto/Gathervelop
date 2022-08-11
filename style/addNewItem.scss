@@ -36,6 +36,7 @@
     align-items: flex-start;
     label {
       margin-bottom: 0.5rem;
+      font-weight: $semi-bold;
     }
     #article-name {
       margin-bottom: 1rem;
@@ -61,13 +62,15 @@
     margin-bottom: .2rem;
     border: solid 2px gray;
     background:none;
-    color: $main-color;
+    color: $dark-color;
     font-weight: $semi-bold;
     border-radius: 0.4rem;
     transition: $transition-md;
     cursor: pointer;
     &:hover {
-      color: $dark-color;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: 0 -20px 0 $dark-color;
       background: $secondary-color;
       border: solid 2px $secondary-color;
     }
