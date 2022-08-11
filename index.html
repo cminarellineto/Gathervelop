@@ -4,16 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Path of the Jedi</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/css/style.css">
+    <link rel="stylesheet" href="sass/css/addNewItem.css">
     <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" type="image/x-icon">
-    <script src="script.js"></script>
+    <script src="script/script.js" defer></script>
     <script src="https://kit.fontawesome.com/2b1c45aad2.js" crossorigin="anonymous"></script>
 </head>
 </html>
 <body>
     <header class="flex-header" id="header">
-        <div class="menu-icon" id="menuIcon">
-            <i class="fa-solid fa-sidebar"></i>
+        <div class="menu-icon">
+            <i class="bi bi-list"></i>
         </div>
         <nav class="grid-item-menu" id="nav" onmouseenter="openMenu()">
             <div class="aside-image" id="aside">
@@ -26,6 +27,28 @@
             </ul>
         </nav>
     </header>
+    <div class="modal-container">
+        <fieldset id="newArticle">
+            <div class="send-input">
+                <label for="fileImg">
+                    <i class="fa-solid fa-image" for="fileImg"></i>
+                    Escolhe uma foto bacana :)
+                    <input id="fileImg" type="file" accept="image/png, image/jpeg, image/jpg, image/gif">
+                </label>
+            </div>
+            <form action="">
+                <label for="article-name">Titulo</label>
+                <input id="article-name" type="text" placeholder="Dê o nome que preferir">
+                <label for="description">Descrição</label>
+                <textarea id="description" placeholder="Descreva, de maneira rápida, do que se trata seu artigo."></textarea>
+                <div class="form-buttons">
+                    <input type="submit" value="Concluir">
+                    <input type="button" value="Cancelar" onclick="closeNewItem()">
+                    <input type="reset" value="Resetar">
+                </div>
+            </form>
+        </fieldset>
+    </div>
     <main>
         <div class="picture">
             <img src="https://cdni.iconscout.com/illustration/premium/thumb/male-front-end-developer-designing-dashboard-3839582-3202976.png" alt="">
@@ -35,7 +58,7 @@
                 <li><i class="fa-brands fa-html5"></i>HTML</li>
                 <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
                 <li onclick="dropdown()"><i class="fa-brands fa-square-js"></i>JavaScript</li>
-                <li><i class="fa-solid fa-plus"></i>Novo artigo</li>
+                <li onclick="openNewItem()"><i class="fa-solid fa-plus"></i>Novo artigo</li>
             </ul>
             <div id="dropdownJS">
                 <dt>
@@ -44,27 +67,6 @@
                     <dd>Vue.JS</dd>
                 </dt>
             </div>
-            <fieldset id="newArticle">
-                <div class="send-input">
-                    <label for="fileImg">
-                        <i class="fa-solid fa-image" for="fileImg"></i>
-                        Escolhe uma foto bacana :)
-                        <input id="fileImg" type="file" accept="image/png, image/jpeg, image/jpg, image/gif">
-                    </label>
-                    <input type="image" src="" alt="">
-                </div>
-                <form action="">
-                    <label for="article-name">Titulo</label>
-                    <input id="article-name" type="text" placeholder="Dê o nome que preferir">
-                    <label for="description">Descrição</label>
-                    <textarea id="description" placeholder="Descreva, de maneira rápida, do que se trata seu artigo."></textarea> 
-                    <div class="form-buttons">
-                        <input type="submit" value="Concluir">
-                        <input type="button" value="Cancelar">
-                        <input type="reset" value="Resetar">
-                    </div>     
-                </form>
-            </fieldset>
             <div class="grid-section">
                 <article>
                     <div>
